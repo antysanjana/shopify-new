@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import NavBarLinks from "./NavBarLinks";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +18,8 @@ function NavBar() {
   };
 
   return (
-    <div>
-      <div className="flex justify-between items-center w-10/12 py-4 mx-auto">
+    <div className="bg-primary">
+      <div className="flex justify-between items-center w-10/12 py-4 mx-auto ">
         <div>
           <Image src="/logo.png" alt="Logo" width={72} height={72} />
         </div>
@@ -70,22 +71,14 @@ function NavBar() {
               variants={menuVariants}
               transition={{ duration: 0.3 }}
             >
-              <div className="flex flex-col py-4">
-                <Link aria-current="page" className="nav-link" href="/">
-                  Home
-                </Link>
-                <Link className="nav-link" href="/about-us">
-                  About
-                </Link>
-                <Link className="nav-link" href="/reviews">
-                  Reviews
-                </Link>
-                <Link className="nav-link" href="/pricing">
-                  Pricing
-                </Link>
+              <div>
+                <NavBarLinks />
               </div>
             </motion.div>
           </div>
+        </div>
+        <div className="hidden md:flex">
+          <NavBarLinks />
         </div>
       </div>
     </div>

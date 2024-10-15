@@ -40,3 +40,23 @@ html {
     text-wrap: balance;
   }
 }
+
+.nav-link {
+  font-size: 1.125rem; 
+  font-weight: 600; 
+  transition: all 0.3s ease; 
+  transform: translateZ(0); 
+}
+
+.nav-link:hover {
+  text-decoration: underline; 
+}
+
+
+.green-link{
+  background-color: #69ba2c;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  text-align: center; 
+  border-radius: 0.375rem;
+}
