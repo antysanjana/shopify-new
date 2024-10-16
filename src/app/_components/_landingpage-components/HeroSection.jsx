@@ -20,13 +20,13 @@ function HeroSection() {
           <h1 className="text-3xl md:text-[50px] md:leading-[60px] font-bold">
             Need a stunning and optimized web shop?
           </h1>
-          <p className="text-2xl leading-[35px] mt-6 mb-8">
+          <p className="custom-paragraph text-2xl leading-[35px] mt-6 mb-8">
             Get high sales with the help of our Shopify Experts, E-Commerce
             Consultants & Skilled Web Developers
           </p>
-          <div className="green-link flex items-center justify-center">
-            <Link href={"/"}>Get a Free Quote</Link>
-            <div>
+          <div className="">
+            <Link href={"/"} className="green-link">
+              Get a Free Quote
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -38,7 +38,7 @@ function HeroSection() {
               >
                 <path d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z" />
               </svg>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

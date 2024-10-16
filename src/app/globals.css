@@ -56,7 +56,77 @@ html {
 .green-link{
   background-color: #69ba2c;
   color: #ffffff;
-  padding: 0.75rem 2rem;
-  text-align: center; 
-  border-radius: 0.375rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem; 
+  display: flex; 
+  gap: 0.5rem;
+  justify-content: center; 
+  align-items: center; 
+  text-decoration: none; 
 }
+
+.mainlogo {
+  width: 6.3rem;
+  height: 6.3rem
+}
+
+@media (max-width: 640px) {
+  .mainlogo {
+    width: 4.5rem;
+      height: 4.5rem
+  }
+}
+
+.custom-paragraph {
+  background-image: linear-gradient(90deg,#e9f9f4,#cfebfe 45.31%,#f2eefe);
+  width: 85%
+}
+
+@media (max-width: 640px) {
+  .custom-paragraph {
+      width:100%
+  }
+}
+
+
+.swiper-slide {
+ 
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  margin: auto;
+  display: block;
+  width: 354px;
+  height: 354px;
+}
+
+
+
+  
+  .about-us-card {
+    display: flex;              
+    flex-direction: column;    
+    align-items: center;        
+    gap: 0.75rem;              
+    width: 83.3333%;            
+    margin-left: auto;         
+    margin-right: auto;       
+    margin-top: 1.5rem;       
+  }
+
+  .about-us-line {
+    height: 2px;                       /* h-[2px] */
+    width: 100%;                       /* w-full */
+    background-color: #69ba2c;  /* bg-tertiary, adjust the variable or use a specific color */
+    display: block;                    /* block */
+  }
+  
+  @media (min-width: 768px) {          /* md:hidden */
+    .about-us-line {
+      display: none;                   /* Hide on medium screens and above */
+    }
+  }

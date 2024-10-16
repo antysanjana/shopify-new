@@ -21,7 +21,13 @@ function NavBar() {
     <div className="bg-primary">
       <div className="flex justify-between items-center w-10/12 py-4 mx-auto ">
         <div>
-          <Image src="/logo.png" alt="Logo" width={72} height={72} />
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            className="mainlogo"
+            width={500}
+            height={500}
+          />
         </div>
         <div>
           <div className="md:hidden">
