@@ -130,3 +130,29 @@ html {
       display: none;                   /* Hide on medium screens and above */
     }
   }
+
+  .review-name {
+    font-size: 1rem; /* This corresponds to Tailwind's font-xl */
+    font-weight: bold;   /* This corresponds to font-bold */
+    color: #f1a244; /* Assuming you have a CSS variable for secondary color */
+    margin-top: 0.75rem; /* This corresponds to mt-3 */
+}
+
+.review-link {
+  text-decoration: underline;   /* Underline text */
+  color: #0000FF;               /* Tailwind's blue-600 */
+  font-weight: bold;            /* Bold text */
+  font-size: 0.875rem;          /* Corresponds to text-sm */
+}
+
+.how-to-start-text {
+  font-size: 1rem;            /* Corresponds to text-base */
+  text-align: center;         /* Center text */
+  width: 66.67%;              /* Corresponds to w-2/3 */
+}
+
+@media (min-width: 768px) {   /* This corresponds to md: */
+  .how-to-start-text {
+      width: 80%;             /* Corresponds to md:w-4/5 */
+  }
+}
