@@ -14,12 +14,12 @@ function HowToStart() {
             High Quality Projects Get Done, Super-Easy & Fast!
           </p>
         </div>
-        <div className="flex flex-col gap-10 mt-10 md:flex md:gap-5">
-          <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col gap-10 mt-10 md:flex md:flex-row md:gap-5">
+          <div className="how-to-start-card">
             <div>
               <Image src={"/data.png"} alt="" width={72} height={72}></Image>
             </div>
-            <div className="text-2xl font-bold">
+            <div className="text-xl font-bold text-center">
               <h1>Brief us about your project</h1>
             </div>
             <div className="how-to-start-text">
@@ -29,11 +29,11 @@ function HowToStart() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-4 items-center">
+          <div className="how-to-start-card">
             <div>
               <Image src={"/data1.png"} alt="" width={72} height={72}></Image>
             </div>
-            <div className="text-xl font-bold">
+            <div className="text-xl font-bold text-center">
               <h1>Confirm the quotation</h1>
             </div>
             <div className="how-to-start-text">
@@ -43,11 +43,11 @@ function HowToStart() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-4 items-center">
+          <div className="how-to-start-card">
             <div>
               <Image src={"/data2.png"} alt="" width={72} height={72}></Image>
             </div>
-            <div className="text-2xl font-bold">
+            <div className="text-xl font-bold text-center">
               <h1>Get it Done</h1>
             </div>
             <div className="how-to-start-text">
@@ -58,8 +58,8 @@ function HowToStart() {
             </div>
           </div>
         </div>
-        <GreenLink />
-        <div className="hidden md:absolute md:left-[200px] md:bottom-[60px]">
+
+        <div className="hidden lg:block lg:absolute lg:left-[200px] lg:bottom-[130px]">
           <Image
             src={"/arrow-left.webp"}
             alt=""
@@ -67,7 +67,7 @@ function HowToStart() {
             height={50}
           ></Image>
         </div>
-        <div className="hidden md:absolute md:right-[280px] md:top-[300px]">
+        <div className="hidden lg:block lg:absolute lg:right-[280px] lg:top-[300px]">
           <Image
             src={"/arrow-right.webp"}
             alt=""
@@ -75,6 +75,7 @@ function HowToStart() {
             height={50}
           ></Image>
         </div>
+        <GreenLink />
       </div>
     </div>
   );
