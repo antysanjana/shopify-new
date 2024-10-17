@@ -141,6 +141,15 @@ html {
     margin-top: 1.5rem;       
   }
 
+  @media (min-width: 768px) { /* Tailwind's md breakpoint is 768px */
+    .about-us-card {
+      display: flex;
+      flex-direction: row;
+      gap: 0.75rem; 
+      
+    }
+  }
+
   .about-us-line {
     height: 2px;                       /* h-[2px] */
     width: 100%;                       /* w-full */

@@ -6,11 +6,11 @@ const WebProjectServices = () => {
   return (
     <div className="max-w-screen-xl mx-auto w-10/12">
       <div>
-        <h1 class="mt-8 text-center w-full text-[35px] color-primary font-bold md:w-1/2 m-auto leading-[50px]">
+        <h1 className="mt-8 text-center w-full text-[35px] color-primary font-bold md:w-1/2 m-auto leading-[50px]">
           We are here for your Shopify, WordPress and custom web<br></br>{" "}
           project needs.
         </h1>
-        <p class="text-center mt-4">
+        <p className="text-center mt-4">
           Even the smallest projects can make a significant difference!
         </p>
       </div>
