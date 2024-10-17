@@ -17,7 +17,6 @@ import FooterSection from "./_landingpage-components/FooterSection";
 function LandingPage() {
   return (
     <div>
-      <NavBar />
       <HeroSection />
       <WhatWeOffer />
       <Carousel />

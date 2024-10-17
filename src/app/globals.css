@@ -48,10 +48,9 @@ html {
   transform: translateZ(0); 
 }
 
-.nav-link:hover {
-  text-decoration: underline; 
+.active {
+  text-decoration: underline;
 }
-
 
 .green-link{
   background-color: #69ba2c;
@@ -186,5 +185,43 @@ html {
 @media (min-width: 768px) {   /* This corresponds to md: */
   .how-to-start-text {
       width: 80%;             /* Corresponds to md:w-4/5 */
+  }
+}
+
+.card-style {
+  break-inside: avoid;
+  margin-bottom: 1.25rem; /* 20px */
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5e7eb; /* Light gray color (Tailwind gray-200) */
+  padding: 1.25rem; /* 20px */
+  border-radius: 0.75rem; /* 12px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.1); /* Example large shadow */
+}
+
+/* About Us Page */
+.about-img {
+  width: 354px;
+  height: 354px;
+}
+
+@media (min-width: 768px) {   /* This corresponds to md: */
+  .about-img {
+      width: 320px;
+      height: 320px;            
+  }
+}
+
+@media (min-width: 1024px) {  
+  .about-img {
+      width: 427px;
+      height: 427px;            
+  }
+}
+
+@media (min-width: 1280px) {   
+  .about-img {
+      width: 563px;
+      height: 563px;            
   }
 }

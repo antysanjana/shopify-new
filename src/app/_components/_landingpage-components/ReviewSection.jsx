@@ -49,10 +49,7 @@ function ReviewSection() {
       </div>
       <div className="columns-1 md:columns-2 gap-5 mt-10">
         {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="break-inside-avoid mb-5 border-solid border-[1px] border-gray-200 p-5 rounded-xl shadow-lg"
-          >
+          <div key={index} className="card-style">
             <p className="text-base">{testimonial.text}</p>
             <h2 className="review-name">{testimonial.name}</h2>
             <a
