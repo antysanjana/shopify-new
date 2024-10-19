@@ -31,6 +31,10 @@ html {
   font-variation-settings: normal;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .bg-primary {
   background-color: #ecf4ff
 }
@@ -238,4 +242,16 @@ html {
     align-items: flex-start;
     text-align: left;
   }
+}
+
+.about-title {
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  font-weight: bold; /* Equivalent to font-bold */
+  color: var(--color-primary); /* Assuming you have a CSS variable for color-primary */
+  margin-top: 1.25rem; /* Equivalent to mt-5 */
+  margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+.bg-secondary {
+  background-color: #052a3d
 }

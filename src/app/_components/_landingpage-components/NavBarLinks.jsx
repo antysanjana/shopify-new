@@ -4,7 +4,7 @@ import Link from "next/link";
 function NavBarLinks() {
   return (
     <div className="flex flex-col py-4 md:flex md:flex-row md:gap-6">
-      <Link aria-current="page" className="nav-link active" href="/">
+      <Link aria-current="page" className="nav-link active underline" href="/">
         Home
       </Link>
       <Link className="nav-link" href="/about">
