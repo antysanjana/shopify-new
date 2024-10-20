@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function AboutUsSection() {
   return (
-    <div className="mt-8 md:flex md: justify-between">
+    <div className="mt-8 md:flex md:items-center">
       <div className="flex flex-col items-center mb-6 w-2/3 mx-auto text-center md:w-1/4 md:text-left">
         <div>
           <p className="font-bold">Bullzpot.com</p>

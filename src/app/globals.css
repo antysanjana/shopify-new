@@ -280,3 +280,23 @@ html {
     height: 477px;
   }
 }
+
+/* Pricing Page */
+.color-secondary {
+  color: #f1a244
+}
+
+
+.bg-tertiary {
+  background-color: #69ba2c
+}
+
+.bg-tertiary:hover {
+  background-color: #bb5729;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1)
+}
+
+.color-white {
+  color: #fff
+}
