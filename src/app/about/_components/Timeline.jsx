@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 function Timeline() {
   return (
-    <div className="max-w-screen-xl py-8 w-10/12 mx-auto">
+    <div className="max-w-screen-xl py-8 mt-10 w-10/12 mx-auto">
       <div class="text-center">
         <h2 class="text-[40px] font-bold color-primary mb-10">
           Bullzpot Timeline

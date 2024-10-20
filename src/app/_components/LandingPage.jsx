@@ -11,8 +11,6 @@ import SvgWave from "./_landingpage-components/SVGWave";
 import HowToStart from "./_landingpage-components/HowToStart";
 import WebProjectServices from "./_landingpage-components/WebProjectsServices";
 import TaskRequestComponent from "./_landingpage-components/TaskRequestComponent";
-import FooterSVG from "./_landingpage-components/FooterSVG";
-import FooterSection from "./_landingpage-components/FooterSection";
 
 function LandingPage() {
   return (
@@ -28,8 +26,6 @@ function LandingPage() {
       <HowToStart />
       <WebProjectServices />
       <TaskRequestComponent />
-      <FooterSVG />
-      <FooterSection />
     </div>
   );
 }

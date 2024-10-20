@@ -7,7 +7,7 @@ function PricingDetails() {
       <div className="bg-primary">
         <div className="max-w-screen-xl w-10/12 mx-auto">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 bg-white border-solid border-[1px] border-gray-200 shadow-lg h-96 px-16 py-10">
+            <div className="md:w-1/2 bg-white border-solid border-[1px] border-gray-200 shadow-lg px-16 py-10">
               <div className="flex items-center mb-3">
                 <div className="bg-secondary color-white h-4 w-4 flex justify-center rounded-full items-center">
                   <svg
@@ -129,13 +129,11 @@ function PricingDetails() {
                 </span>
               </div>
             </div>
-            <div className="md:w-1/2 h-96 bg-secondary px-10 py-10">
+            <div className="md:w-1/2 h-[30rem] md:h-[33rem]  bg-secondary px-10 py-10">
               <h2 className="text-2xl font-bold color-white">Starting from</h2>
               <h1 className="text-[40px] font-bold color-white">$99 -</h1>
               <a href="mailto:contact@bullzpot.com">
-                <button className="bg-tertiary hover:bg-orange-400 duration-300 ease-in-out py-3 w-full font-semibold my-4 md:my-8 rounded-md color-white px-6 flex justify-center items-center">
-                  Get a Free Quote
-                </button>
+                <button className="green-button">Get a Free Quote</button>
               </a>
               <div className="relative mt-8 md:mt-10">
                 <div className="flex">

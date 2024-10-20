@@ -6,8 +6,6 @@ import Timeline from "./_components/Timeline";
 import Heading from "./_components/Heading";
 import Carousel from "../_components/_landingpage-components/Carousel";
 import ReviewSection from "../_components/_landingpage-components/ReviewSection";
-import FooterSVG from "../_components/_landingpage-components/FooterSVG";
-import FooterSection from "../_components/_landingpage-components/FooterSection";
 
 function page() {
   return (
@@ -19,8 +17,6 @@ function page() {
       <Heading />
       <Carousel />
       <ReviewSection />
-      <FooterSVG />
-      <FooterSection />
     </div>
   );
 }

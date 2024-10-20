@@ -12,7 +12,7 @@ import Image from "next/image";
 
 function Carousel() {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary active:cursor-grab select-none">
       <Swiper
         spaceBetween={30}
         centeredSlides={false}

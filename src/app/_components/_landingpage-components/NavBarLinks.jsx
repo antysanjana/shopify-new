@@ -3,12 +3,10 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 function NavBarLinks() {
-  // const pathname = usePathname();
-  const pathname = "pathname";
-  console.log("Navbar Links");
+  const pathname = usePathname();
 
   return (
-    <div className="flex flex-col py-4 md:flex md:flex-row md:gap-6">
+    <>
       <Link
         aria-current="page"
         className={`nav-link ${pathname === "/" ? "underline" : ""}`}
@@ -23,7 +21,7 @@ function NavBarLinks() {
         About
       </Link>
       <Link
-        className={`nav-link ${pathname === "/reviwes" ? "underline" : ""}`}
+        className={`nav-link ${pathname === "/reviews" ? "underline" : ""}`}
         href="/reviews"
       >
         Reviews
@@ -34,7 +32,7 @@ function NavBarLinks() {
       >
         Pricing
       </Link>
-    </div>
+    </>
   );
 }
 

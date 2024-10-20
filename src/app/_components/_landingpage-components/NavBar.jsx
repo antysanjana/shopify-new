@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import NavBarLinks from "./NavBarLinks";
 
 function NavBar() {
@@ -70,20 +69,29 @@ function NavBar() {
               )}
             </button>
 
-            <motion.div
-              className="absolute mt-11 flex justify-between inset-x-0 z-20 w-full px-6 bg-primary overflow-hidden"
-              initial="closed"
-              animate={isOpen ? "open" : "closed"}
-              variants={menuVariants}
-              transition={{ duration: 0.3 }}
-            >
-              <div>
-                <NavBarLinks />
-              </div>
-            </motion.div>
+            <AnimatePresence>
+              {isOpen && (
+                <motion.div
+                  initial={{ x: "-100%" }}
+                  animate={{ x: 0 }}
+                  exit={{ x: "-100%" }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 30,
+                    duration: 0.1,
+                  }}
+                  className="absolute mt-11 flex justify-between inset-x-0 z-20 w-full px-6 bg-primary overflow-hidden gap-5"
+                >
+                  <div className="flex flex-col gap-4 pb-4">
+                    <NavBarLinks />
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden md:flex md:flex-row md:gap-4">
           <NavBarLinks />
         </div>
       </div>

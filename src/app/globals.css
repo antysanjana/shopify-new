@@ -7,12 +7,12 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
@@ -288,7 +288,7 @@ html {
 
 
 .bg-tertiary {
-  background-color: #69ba2c
+  background-color: #69ba2c;
 }
 
 .bg-tertiary:hover {
@@ -299,4 +299,43 @@ html {
 
 .color-white {
   color: #fff
+}
+
+.green-button {
+  background-color: #69ba2c; /* Replace with your actual color */
+  color: white; /* Assuming `color-white` is white */
+  padding: 0.75rem; /* 3 * 0.25rem */
+  width: 100%;
+  font-weight: 600; /* Font-semibold */
+  margin-top: 1rem; /* My-4 */
+  margin-bottom: 1rem; /* My-4 */
+  border-radius: 0.375rem; /* Rounded-md */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.green-button:hover {
+  background-color: #fb923c; /* Replace with your actual hover color */
+}
+
+/* For medium screens and up */
+@media (min-width: 768px) {
+  .green-button {
+    margin-top: 2rem; /* My-8 */
+    margin-bottom: 2rem; /* My-8 */
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Default to column */
+  gap: 1.25rem; /* 5 * 0.25rem, adjust based on your design system */
+}
+
+@media (min-width: 768px) { /* Tailwind's md breakpoint */
+  .container {
+    flex-direction: row; /* Change to row on medium screens and above */
+  }
 }
