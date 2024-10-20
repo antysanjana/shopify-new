@@ -52,9 +52,6 @@ html {
   transform: translateZ(0); 
 }
 
-.active {
-  text-decoration: underline;
-}
 
 .green-link{
   background-color: #69ba2c;
@@ -254,4 +251,32 @@ html {
 
 .bg-secondary {
   background-color: #052a3d
+}
+
+/* Review Section */
+
+.review-img {
+  width: 355px;
+  height: 282px;
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .review-img {
+    width: 320px;
+    height: 254px;
+  }
+}
+
+@media (min-width: 1024px) { 
+  .review-img {
+    width: 427px;
+    height: 339px;
+  }
+}
+
+@media (min-width: 1280px) { 
+  .review-img {
+    width: 600px;
+    height: 477px;
+  }
 }
